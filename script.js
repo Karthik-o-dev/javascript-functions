@@ -110,5 +110,24 @@ const sumOfNum = n => (n * (n + 1)) / 2;
 const res4 = sumOfNum(100);
 console.log(res4);
 
+// armstrong problem
+
+let num = 153;
+let original = num;
+
+sum = 0;
+
+let digits = num.toString().length;
+while (num > 0) {
+    digit = num % 10;
+    sum = sum + digit ** digits;
+    num = parseInt(num / 10);
+}
+
+if (sum == original) {
+    console.log("the number is armstrong");
+} else {
+    console.log("this is not a armstrong number");
+}
 
 
