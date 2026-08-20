@@ -128,6 +128,6 @@ if (sum == original) {
     console.log("the number is armstrong");
 } else {
     console.log("this is not a armstrong number");
-}
+};
 
 
