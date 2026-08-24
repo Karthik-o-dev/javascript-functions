@@ -78,3 +78,4 @@ for (let i = 0; i < len / 2; i++) {
     }
 }
 console.log(isPali);
+
