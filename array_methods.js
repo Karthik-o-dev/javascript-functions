@@ -33,3 +33,31 @@ const hide = numStart + "*****" + numEnd;
 
 console.log(hide);
 
+
+// hide email
+
+const email = "karthikodungattuthodi@gmail.com";
+const splt = email.split("@");
+
+const spltStart = splt[0];
+const spltEnd = splt[1];
+const start = spltStart.slice(0, -8);
+const hiddenStart = start + "********";
+const newEmail = hiddenStart + "@" + spltEnd;
+
+console.log(newEmail);
+
+
+//array method ->yarra dohtem
+
+const text = "array method";
+const sp = text.split(" ");
+const res = [];
+
+for (i = 0; i < sp.length; i++) {
+    const rev = sp[i].split("").reverse().join("");
+    res.push(rev);
+}
+
+console.log(res.join(" "));
+
