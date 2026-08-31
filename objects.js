@@ -31,13 +31,15 @@ const { name: FN, age: AGE } = object;
 
 console.log(FN, AGE);
 
-// spread
+// spread array
 
 const arr = [1, 2, 3];
 const arr2 = [4, 5, 6];
 const newArr = [...arr, ...arr2];
 newArr.push(4);
 console.log(newArr);
+
+// object
 
 const records = {
     Name: "Zidan",
@@ -51,3 +53,15 @@ const exam = {
 const user = { ...records, ...exam };
 
 console.log(user);
+
+// Rest operator
+
+const box = {
+    Name: "karthik",
+    age: 22,
+    City: "Melattur"
+};
+
+const { Name, ...details } = box;
+console.log(Name);
+console.log(details);
