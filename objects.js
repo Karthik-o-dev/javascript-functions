@@ -54,6 +54,12 @@ const user = { ...records, ...exam };
 
 console.log(user);
 
+
+const data = { name: "Hari", age: 30 };
+const newData = { ...data };
+newData.name = "alex";
+console.log(data, newData);
+
 // Rest operator
 
 const box = {
@@ -65,3 +71,11 @@ const box = {
 const { Name, ...details } = box;
 console.log(Name);
 console.log(details);
+
+const rest = ["user1", "user2", "user3", "user4"];
+const [ur1, ur2, ...restInfo] = rest;
+console.log(ur1, ur2, restInfo);
+
+
+
+
